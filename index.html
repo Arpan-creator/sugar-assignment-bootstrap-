@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Nykaa Navbar Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+    .navbar-brand img {
+      max-height: 50px;
+    }
+
+    .navbar {
+      padding: 0px 0px;
+    }
+
+    .navbar-nav .nav-link {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .form-inline {
+      display: flex;
+      align-items: center;
+    }
+
+    .form-inline .form-control {
+      width: 300px;
+    }
+
+    .icons svg {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: white;
+
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color:grey;
+    }
+
+    .top-navbar .nav-link {
+      color: rgb(0, 0, 0);
+      margin-left: 20px;
+
+
+      /* padding-left: 10px;*/
+      padding-right: 10px;
+    }
+
+    .navbar {
+      margin-bottom: 0%;
+      box-sizing: border-box;
+
+
+    }
+
+    .card-text {
+      text-align: center;
+      padding-top: 0px;
+      margin: 0;
+    }
+
+    .btn {
+      display: flex;
+      height: 50px;
+      margin-left: 5px;
+      background-color: black;
+    }
+
+    .material-symbols-outlined {
+      border: 2px solid black;
+      border-radius: 30%;
+      /* font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 10, 'opsz' 24; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      height: 50px;
+      width: 40px;
+    }
+
+    .card-text {
+      text-align: center;
+      padding-top: 0px;
+      margin: 0;
+    }
+
+    .btn {
+      display: flex;
+      height: 50px;
+      margin-left: 5px;
+      background-color: black;
+    }
+    .justify-content-center{
+        gap:20px;
+        
+    }
+
+
+  </style>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light top-navbar ">
+    <div class="container-fluid" style="background-color:pink;">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone"
+              viewBox="0 0 16 16">
+              <path
+                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zm0-1H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+              <path d="M8 12.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+            </svg>
+            Get App
+          </a>
+          <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+              viewBox="0 0 16 16">
+              <path
+                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+            </svg>
+            Store & Events
+          </a>
+          <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gift"
+              viewBox="0 0 16 16">
+              <path
+                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z" />
+            </svg>
+            Gift Card
+          </a>
+          <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-question-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+              <path
+                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+            </svg>
+            Help
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://in.sugarcosmetics.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FNonCVLogoDesktop.86874a45.png&w=256&q=100"
+          alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto" style="font-weight: bold;">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Category 1</a></li>
+              <li><a class="dropdown-item" href="#">Category 2</a></li>
+              <li><a class="dropdown-item" href="#">Category 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Brand</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Luxe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nykaa Fashion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Beauty Advice</a>
+          </li>
+
+        </ul>
+        <form class="form-inline d-flex" style="padding-right: 50px;">
+          <div class="input-group-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+          </div>
+          <input class="form-control me-4 " type="search" placeholder="Search on Nykaa" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Sign in</button>
+        </form>
+
+
+        <div class="icons" style="padding-right: 150px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <hr style="margin: 0;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid" style="justify-content: center;">
+      <div class=" navbar">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Makeup</a>
+          <a class="nav-link" href="#">Skin</a>
+          <a class="nav-link" href="#">Hair</a>
+          <a class="nav-link" href="#">Appliances</a>
+          <a class="nav-link" href="#">Bath & Body</a>
+          <a class="nav-link" href="#">Natural</a>
+          <a class="nav-link" href="#">Mom & Baby</a>
+          <a class="nav-link" href="#">Health & Wellness</a>
+          <a class="nav-link" href="#">Men</a>
+          <a class="nav-link" href="#">Fragrance</a>
+          <a class="nav-link" href="#">Lingerie & Accessories</a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+   
+  <div class="d-flex justify-content-center p-2">
+    <div class="card-container ">
+        <div class="card" style="width: 18rem;">
+            <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FMousseMuseMaskproofLipCreamPDPimages-1080x1080-1TO5SHADES1.jpg%3Fv%3D1717674889&w=256&q=75"
+                class="img-fluid" alt="...">
+            <div class="card-body">
+                <p class="card-text">Mousse Muse</p>
+                <p class="card-text">13 shade</p>
+                <div class="card-text">
+                    <span class="card-text" style="font-weight: bold;">₹555</span>
+                    <span>MRP ₹599</span>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                    <a href="#" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .45rem; --bs-btn-padding-x: 3.5rem; --bs-btn-font-size: .85rem"><span>SELECT
+                            SHADE</span></a>
+                    <span class="favorite-icon">
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span 
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="card-container ">
+        <div class="card" style="width: 18rem;">
+            <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FMousseMuseMaskproofLipCreamPDPimages-1080x1080-1TO5SHADES1.jpg%3Fv%3D1717674889&w=256&q=75"
+                class="img-fluid" alt="...">
+            <div class="card-body">
+                <p class="card-text">Mousse Muse</p>
+                <p class="card-text">13 shade</p>
+                <div class="card-text">
+                    <span class="card-text" style="font-weight: bold;">₹555</span>
+                    <span>MRP ₹599</span>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                    <a href="#" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .45rem; --bs-btn-padding-x: 3.5rem; --bs-btn-font-size: .85rem"><span>SELECT
+                            SHADE</span></a>
+                    <span class="favorite-icon">
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span 
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="card-container ">
+        <div class="card" style="width: 18rem;">
+            <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FMousseMuseMaskproofLipCreamPDPimages-1080x1080-1TO5SHADES1.jpg%3Fv%3D1717674889&w=256&q=75"
+                class="img-fluid" alt="...">
+            <div class="card-body">
+                <p class="card-text">Mousse Muse</p>
+                <p class="card-text">13 shade</p>
+                <div class="card-text">
+                    <span class="card-text" style="font-weight: bold;">₹555</span>
+                    <span>MRP ₹599</span>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                    <a href="#" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .45rem; --bs-btn-padding-x: 3.5rem; --bs-btn-font-size: .85rem"><span>SELECT
+                            SHADE</span></a>
+                    <span class="favorite-icon">
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span 
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="card-container ">
+        <div class="card" style="width: 18rem;">
+            <img src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FMousseMuseMaskproofLipCreamPDPimages-1080x1080-1TO5SHADES1.jpg%3Fv%3D1717674889&w=256&q=75"
+                class="img-fluid" alt="...">
+            <div class="card-body">
+                <p class="card-text">Mousse Muse</p>
+                <p class="card-text">13 shade</p>
+                <div class="card-text">
+                    <span class="card-text" style="font-weight: bold;">₹555</span>
+                    <span>MRP ₹599</span>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                    <a href="#" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .45rem; --bs-btn-padding-x: 3.5rem; --bs-btn-font-size: .85rem"><span>SELECT
+                            SHADE</span></a>
+                    <span class="favorite-icon">
+                        <span class="material-symbols-outlined">
+                            favorite
+                        </span 
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    
+</div>
+</body>
+
+</html>
